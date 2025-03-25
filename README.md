@@ -158,8 +158,9 @@ adherence: 8.75
 5. Animate external frames GIF: `sda animate --gif --loop --hold 0.2 --fade 0.3 --external`
 ![External Animation](/assets/4092149306_032_EXT.gif)
 
-5. Animate external frames MP4 (different seed): `sda animate --mp4 --fps 30 --loop --hold 0.25 --fade 0.5 --tag 2 --external`
-![External Animation](/assets/4092149312_032_EXT.mp4)
+5. Animate external frames MP4: `sda animate --mp4 --fps 30 --loop --hold 0.25 --fade 0.5 --tag 2 --external`
+[External MP4 Animation](/assets/4092149312_032_EXT.mp4)
+(frames are from a different seed)
 
 ## TODO
 
