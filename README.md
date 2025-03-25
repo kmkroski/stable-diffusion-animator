@@ -139,21 +139,16 @@ excludes:
 adherence: 8.75
 ```
 
-Preview: `sda preview R8 24`
-[IMAGE]
+Create preview images: `sda preview R8 24`
+![Preview Images](/assets/preview_images.png)
 
-Generate: `sda generate 4092149306 32`
-Animate: 
-    - `sda animate --gif --loop --hold 0.1 --fade 0.2 --tag 1 --internal`
-    - `sda animate --gif --loop --hold 0.2 --fade 0.3 --external`
-[IMAGES]
+Generate frames: `sda generate 4092149306 32`
 
-Generate: `sda generate 4092149312 32`
-Animate: 
-    - `sda animate --gif --loop --hold 0.1 --fade 0.2 --tag 1 --internal`
-    - `sda animate --gif --loop --hold 0.2 --fade 0.3 --external`
-[IMAGES]
+Animate internal frames: `sda animate --gif --loop --hold 0.1 --fade 0.2 --tag 1 --internal`
+![Internal Animation](/assets/4092149306_032_INT.gif)
 
+Animate external frames: `sda animate --gif --loop --hold 0.2 --fade 0.3 --external`
+![External Animation](/assets/4092149306_032_EXT.gif)
 
 ## TODO
 
