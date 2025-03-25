@@ -9,15 +9,21 @@ lower values are grainy or blurry, while higher values are more detailed and mor
 refined. Internal animations show how the latent patch is refined to create an image 
 from noise. 
 
-### Internal Animation
-
-![Internal Animation](/assets/4092149306_032_INT.gif)
-
 ### External Animation
+
+This animation shows the difference in detail and refinement over different generation
+steps. The most "refined" image is 32 steps, while the blurry frame is only 2 steps.
 
 ![External Animation](/assets/4092149306_032_EXT.gif)
 
-For more information on how this model works, see this section of TensorFlow's docs:
+### Internal Animation
+
+This animation shows the decoded latent patch after each generation step. The step is 
+noted in the upper right corner.
+
+![Internal Animation](/assets/4092149306_032_INT.gif)
+
+For more information on how the Stable Diffusion model works, see this section of TensorFlow's docs:
 https://www.tensorflow.org/tutorials/generative/generate_images_with_stable_diffusion
 
 ## Setup
@@ -120,6 +126,7 @@ The `animation` command has several options to customize your assembled animatio
 
 ## Example Prompt and Outputs
 
+1. Put this prompt into `prompt.yml`
 ```
 includes:
 - large futuristic city settlement on Mars
@@ -139,15 +146,15 @@ excludes:
 adherence: 8.75
 ```
 
-Create preview images: `sda preview R8 24`
+2. Create preview images: `sda preview R8 24`
 ![Preview Images](/assets/preview_images.png)
 
-Generate frames: `sda generate 4092149306 32`
+3. Generate frames: `sda generate 4092149306 32`
 
-Animate internal frames: `sda animate --gif --loop --hold 0.1 --fade 0.2 --tag 1 --internal`
+4. Animate internal frames: `sda animate --gif --loop --hold 0.1 --fade 0.2 --tag 1 --internal`
 ![Internal Animation](/assets/4092149306_032_INT.gif)
 
-Animate external frames: `sda animate --gif --loop --hold 0.2 --fade 0.3 --external`
+5. Animate external frames: `sda animate --gif --loop --hold 0.2 --fade 0.3 --external`
 ![External Animation](/assets/4092149306_032_EXT.gif)
 
 ## TODO
