@@ -107,22 +107,19 @@ different images.
 ## Animation Notes
 
 The `animation` command has several options to customize your assembled animations:
-    - `--gif` or `--mp4`: Generate a GIF or an MP4 file
-    - `--loop`: Sequence the frames to create a "back-and forth" animation and 
-      (GIF-only) loop the anumation. If you have 4 frames, it will sequence them as:
-      1,2,3,4,3,2
-    - `--fps`: Set the frames per second. If you're using a GIF, keep this low (~10), 
-      but MP4s can be much higher (30 or 60 or more).
-    - `--hold`: Pause on each frame for a set amount of time expressed in seconds
-    - `--fade`: The duration of the fade between frames expressed in seconds
-    - `--tag`: Add a small tag showing the step count. 0 will disable the tag display,
-      while 1, 2, 3, or 4 will place the tag in a corner: 
-        1 = top-right
-        2 = top-left
-        3 = bottom-left
-        4 = bottom-right
-    - `--internal` or `--external`: Generate either the internal or external animations,
-      leaving this off will generate both.
+
+- `--gif` or `--mp4`: Generate a GIF or an MP4 file
+- `--loop`: Sequence the frames to create a "back-and forth" animation and (GIF-only) loop the animation. If you have 4 frames, it will sequence them as: 1,2,3,4,3,2
+- `--fps`: Set the frames per second. If you're using a GIF, keep this low (~10), but MP4s can be much higher (30 or 60 or more).
+- `--hold`: Pause on each frame for a set amount of time expressed in seconds
+- `--fade`: The duration of the fade between frames expressed in seconds
+- `--internal` or `--external`: Generate either the internal or external animations, and leaving this off will generate both.
+- `--tag`: Add a small tag showing the step count. 0 will disable the tag display, while 1, 2, 3, or 4 will place the tag in a corner: 
+    - 1: top-right
+    - 2: top-left
+    - 3: bottom-left
+    - 4: bottom-right
+
 
 ## Example Prompt and Outputs
 
