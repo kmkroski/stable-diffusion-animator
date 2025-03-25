@@ -30,7 +30,7 @@ class MP4Animator(BaseAnimator):
 
         images = self._load(images, tag, loop)
         video = VideoWriter(
-            filepath,
+            filepath + ".mp4",
             VideoWriter_fourcc(*"mp4v"),
             fps,
             images[0].size,

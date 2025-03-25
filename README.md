@@ -127,6 +127,7 @@ The `animation` command has several options to customize your assembled animatio
 ## Example Prompt and Outputs
 
 1. Put this prompt into `prompt.yml`
+
 ```
 includes:
 - large futuristic city settlement on Mars
@@ -151,11 +152,14 @@ adherence: 8.75
 
 3. Generate frames: `sda generate 4092149306 32`
 
-4. Animate internal frames: `sda animate --gif --loop --hold 0.1 --fade 0.2 --tag 1 --internal`
+4. Animate internal frames GIF: `sda animate --gif --loop --hold 0.1 --fade 0.2 --tag 1 --internal`
 ![Internal Animation](/assets/4092149306_032_INT.gif)
 
-5. Animate external frames: `sda animate --gif --loop --hold 0.2 --fade 0.3 --external`
+5. Animate external frames GIF: `sda animate --gif --loop --hold 0.2 --fade 0.3 --external`
 ![External Animation](/assets/4092149306_032_EXT.gif)
+
+5. Animate external frames MP4 (different seed): `sda animate --mp4 --fps 30 --loop --hold 0.25 --fade 0.5 --tag 2 --external`
+![External Animation](/assets/4092149312_032_EXT.mp4)
 
 ## TODO
 
