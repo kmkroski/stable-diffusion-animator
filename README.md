@@ -9,6 +9,14 @@ lower values are grainy or blurry, while higher values are more detailed and mor
 refined. Internal animations show how the latent patch is refined to create an image 
 from noise. 
 
+### Internal Animation
+
+![Internal Animation](/assets/4092149306_032_INT.gif)
+
+### External Animation
+
+![External Animation](/assets/4092149306_032_EXT.gif)
+
 For more information on how this model works, see this section of TensorFlow's docs:
 https://www.tensorflow.org/tutorials/generative/generate_images_with_stable_diffusion
 
