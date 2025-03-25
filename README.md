@@ -154,4 +154,5 @@ Animate external frames: `sda animate --gif --loop --hold 0.2 --fade 0.3 --exter
 
 - Clean up StableDiffusionWriter and base class
 - Finish tests
-- Optimize result GIFs
+- Optimize result GIFs 
+    - GIFs on this page are optimized with https://ezgif.com/optimize
