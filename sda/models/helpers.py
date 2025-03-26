@@ -12,7 +12,6 @@ PROMPT_INCLUDES: list[str] = [
     "sharp focus and lighting",
 ]
 PROMPT_EXCLUDES: list[str] = [
-    "blue sky",
     "abstract",
     "drawing",
     "sketch",
